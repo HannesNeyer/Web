@@ -1,0 +1,15 @@
+/*Element selector gibt allen elementen vom selben typ diesen Style */
+div{
+    background-color: aquamarine;
+}
+/*ID Selector*/
+#header{
+    font-size: large;
+}
+/*Klassenselector*/
+.subtitle{
+    color: red;
+}
+#text p{
+    background-color: orange;
+}
