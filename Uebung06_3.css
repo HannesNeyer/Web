@@ -1,0 +1,57 @@
+.container{
+    height: 400px;
+    width: 400px;
+    margin: 40px;
+    display: flex;
+    position: relative;
+}
+
+.blackBox{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.greenBox{
+    height: 300px;
+    width: 200px;
+    background-color: rgb(89, 202, 89);
+    position: absolute;
+}
+
+.blueBox{
+    height: 300px;
+    width: 200px;
+    background-color: rgb(89, 125, 202);
+    position: absolute;
+    right: 0;
+}
+
+.orangeBox{
+    height: 100px;
+    width: 400px;
+    position: absolute;
+    background-color: orange;
+    bottom: 0;
+}
+
+.greyBoxContainer{
+    height: 250px;
+    width: 250px;
+    background-color: grey;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orangeBox2{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+}
