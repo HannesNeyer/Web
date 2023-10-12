@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        background-color: red;
+        padding: 10px;
+    }
+
+    .container{
+        display: grid;
+        column-gap: 1px;
+        row-gap: 1px;
+        grid-template-columns: 33% 33% 33%;
+        grid-auto-rows: minmax(150px, auto);
+    }
+
+    .item1{
+       grid-row-start: span 3; 
+    }
+
+    .item2{
+        grid-column-start: span 2;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consequatur beatae quod ratione rerum accusantium! Exercitationem placeat sint odit sed nihil maxime dolorem magnam, dolores nisi iure assumenda ipsum debitis!</div>
+        <div class="box item2">zwei</div>
+        <div class="box item3">drei</div>
+        <div class="box item4">vier</div>
+        <div class="box item5">fünf</div>
+    </div>
+</body>
+</html>
