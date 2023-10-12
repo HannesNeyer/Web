@@ -1,0 +1,54 @@
+.blueBox{
+    height: 300px;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: aqua;
+    position: fixed;
+    }
+    
+    .brownBox{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    }
+
+    .Text{
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    p{
+        padding-top: 20px;
+    }
+
+    .header{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 370px;
+    }
+
+    .box{
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+        background-color: greenyellow;
+    }
+    
+    .lilaBox{
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

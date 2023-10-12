@@ -1,0 +1,44 @@
+.blackBox{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    background-color: black;
+    position: absolute;
+}
+.blueBox{
+    width: 200px;
+    height: 400px;
+    margin: 40px;
+    background-color: aqua;
+    position: absolute;
+}
+.greenBox{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(112, 183, 122); 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bottomHeader{
+position: fixed;
+height: 50px;
+width: 94.5%;
+margin-left: 40px;
+margin-right: 40px;
+border-color: black;
+border-style: solid;
+border-width: 2px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+bottom: 40px;
+}
+
+.box{
+    height: 20px;
+    width: 40px;
+    background-color: rgba(11, 131, 33, 0.268);
+}
