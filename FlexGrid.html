@@ -15,9 +15,20 @@
         display: grid;
         column-gap: 1px;
         row-gap: 1px;
-        grid-template-columns: 33% 33% 33%;
-        grid-auto-rows: minmax(150px, auto);
+        grid-template-columns: 100%;
+        grid-auto-rows: minmax(100px, auto);
     }
+
+    @media (min-width: 600px){
+        .container{
+            display: grid;
+            column-gap: 1px;
+            row-gap: 1px;
+            grid-template-columns: 33% 33% 33%;
+            grid-auto-rows: minmax(150px, auto);
+        }
+    }
+        
 
     .item1{
        grid-row-start: span 3; 

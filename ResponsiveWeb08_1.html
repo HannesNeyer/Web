@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssreset.css">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-template-rows: 3fr;
+        grid-auto-flow: column;
+        width: auto;
+        margin: 50px;
+        height: 200px;
+        position: relative;
+        background-color: aquamarine; 
+        align-items: center;
+        justify-items: center;
+    }
+
+    .content{
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+    }
+
+    .container2{
+        display: grid;
+        grid-template-rows: 2fr;
+        grid-auto-flow: column;
+        width: auto;
+        margin: 50px;
+        height: 350px;
+        position: relative;
+        align-items: center; 
+    }
+
+    .box{
+        position: absolute;
+        width: 60%;
+        height: 350px;
+        background-color: chartreuse;
+        left: 0;
+    }
+
+    .box2{
+        position: absolute;
+        width: 35%;
+        height: 350px;
+        background-color: chartreuse;
+        right: 0;
+    }
+
+    @media screen and (max-width: 800px){
+        .container{
+            display: contents;
+        }
+        
+        .content{
+            width: 50px;
+            height: 50px;
+            margin: 50px;
+            background-color: aqua;
+            grid-row: span 1;
+        }
+
+        .container2{
+            display: grid;
+            grid-template-rows: 2fr;
+            width: auto;
+            margin: 50px;
+            height: 750px;
+            position: relative;
+            align-items: center;
+            justify-items: left; 
+        }
+
+        .box{
+            position: absolute;
+            width: 400px;
+            height: 350px;
+            background-color: chartreuse;
+            top: 0;
+        }
+
+        .box2{
+            position: absolute;
+            width: 400px;
+            height: 350px;
+            background-color: chartreuse;
+            left: 0;
+            bottom: 0;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+    </div>
+    <div class="container2">
+        <div class="box"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
