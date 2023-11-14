@@ -1,0 +1,111 @@
+.mainHeader{
+    display: flex;
+    position: absolute;
+    background: linear-gradient(to right, #F90000, #BC0606); 
+    overflow:hidden;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+    width: 90vw;
+    height: 40px;
+    margin-left: 13%;
+    align-items: center;
+    justify-content: space-evenly;
+    clip-path: polygon(
+    0 240%,
+    10% 0,
+    100% 0%,
+    100% 100%)
+}
+
+.mainHeaderPart{
+    display: flex;
+    position: fixed;
+    background: linear-gradient(to right, #F90000, #BC0606); 
+    overflow:hidden;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+    width: 20vw;
+    height: 40px;
+    left: 0px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(
+        0 0%,
+        100% 0,
+        100% 0%,
+        100% 0%,
+        90% 60%,
+        83.2% 100%,
+        0% 100%,
+        0% 10%
+    )
+}
+
+.siteTitle{
+    margin-left: -35px;
+}
+
+.subHeader{
+    position: relative;
+    background-color: #BC0606; 
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+    font-size: 20px;
+    color: white;
+    width: 70vw;
+    height: 40px;
+    margin-left: 14.8%;
+    margin-top: 4%;
+    clip-path: polygon(
+    0 225%,
+    10% 0,
+    100% 0%,
+    100% 100%)
+}
+
+.subHeaderText{
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 300px;
+    height: 40px;
+    width: 40vw;
+}
+
+a{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+    text-decoration: underline;
+}
+
+img{
+    width: 301px;
+    height: 40px;
+}
+
+.content{
+    display: grid;
+    position: relative;
+    width: 1015px;
+    height: 40px;
+    margin-left: 18.7%;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #F90000;
+}
+
+
+
