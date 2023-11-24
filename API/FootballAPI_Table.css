@@ -1,6 +1,6 @@
 .mainHeader{
     display: flex;
-    position: absolute;
+    position: fixed;
     background: linear-gradient(to right, #F90000, #BC0606); 
     overflow:hidden;
     font-family: sans-serif;
@@ -91,20 +91,81 @@ a:hover{
     text-decoration: underline;
 }
 
-img{
-    width: 301px;
-    height: 40px;
+image{
+    width: 25vw;
+    height: 25vw;
+}
+
+.wrapper{
+    position: relative;
+    width: 1015px;
+    height: 500px;
+    margin-left: 18.7%;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+.index{
+    margin-right: 8px;
+    text-align: center;
+    width: 20px;
+}
+
+.teamName{
+    width: 200px;
+}
+
+.matches{
+    width: 20px;
+}
+
+.won{
+    width: 20px;
+    margin-left: 70px;
+    text-align: center;
+}
+
+.draw{
+    width: 20px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+.lost{
+    width: 20px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+.goals{
+    width: 20px;
+    margin-left: 73px;
+}
+
+.goalDiff{
+    width: 20px;
+    margin-left: 69px;
+    text-align: center;
+    
+}
+
+.points{
+    width: 20px;
+    margin-left: 85px;
+    text-align: center;
 }
 
 .content{
-    display: grid;
-    position: relative;
-    width: 1015px;
+    display: flex;
+    width: auto;
     height: 40px;
-    margin-left: 18.7%;
-    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 8px;
-    background-color: #F90000;
+    background: radial-gradient(#F90000, #BC0606);
+    align-items: center;
+    font-family: sans-serif;
+    padding-left: 7.4%;
+    font-size: 15px;
+    color: white;
 }
 
 

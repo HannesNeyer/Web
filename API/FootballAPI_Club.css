@@ -1,6 +1,6 @@
 .mainHeader{
     display: flex;
-    position: absolute;
+    position: fixed;
     background: linear-gradient(to right, #F90000, #BC0606); 
     overflow:hidden;
     font-family: sans-serif;
@@ -62,8 +62,52 @@ a:hover{
     text-decoration: underline;
 }
 
-img{
+.image{
     width: 301px;
     height: 40px;
+    position: fixed;
 }
 
+.icons{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.teamName{
+    display: flex;
+    padding-left: 20%;
+    padding-top: 6px;
+}
+
+.wrapper{
+    position:relative;
+    width: auto;
+    height: 150px;
+    margin-left: 1%;
+    margin-right: 1%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    z-index: -99;
+}
+
+h1{
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+    font-size: 50px;
+    color: black;
+}
+
+.content{
+    width: 500px;
+    height: 80px;
+    margin-top: 60px;
+    margin-right: 1%;
+    border-radius: 8px;
+    background: radial-gradient(#F90000, #BC0606);
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+}
