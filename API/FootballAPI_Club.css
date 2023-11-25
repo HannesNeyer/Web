@@ -11,6 +11,7 @@
     margin-left: 13%;
     align-items: center;
     justify-content: space-evenly;
+    transform: translateY(-100px);
     clip-path: polygon(
     0 240%,
     10% 0,
@@ -32,6 +33,7 @@
     margin-top: 40px;
     align-items: center;
     justify-content: center;
+    transform: translateY(-100px);
     clip-path: polygon(
         0 0%,
         100% 0,
@@ -63,9 +65,16 @@ a:hover{
 }
 
 .image{
-    width: 301px;
+    width: 500px;
     height: 40px;
     position: fixed;
+    background-color: white;
+    transform: translateY(-100px);   
+    z-index: -1;
+    margin-left: -100px;
+}
+
+.imageContainer{
 }
 
 .icons{
@@ -90,6 +99,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     z-index: -99;
+    margin-top: 100px;
 }
 
 h1{
