@@ -20,6 +20,7 @@ async function getData() {
 
 document.addEventListener("DOMContentLoaded",()=>{
     getData();
+
 })
 
 
