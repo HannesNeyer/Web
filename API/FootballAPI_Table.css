@@ -96,6 +96,13 @@ image{
     height: 25vw;
 }
 
+.ads{
+    width: 260px;
+    height: 500px;
+    position: absolute;
+    margin-top: 100px;
+}
+
 .wrapper{
     position: relative;
     width: 1015px;
