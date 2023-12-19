@@ -4,7 +4,8 @@ import Button from './components/button';
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-green-400">
+      hello
       <header className="App-header">
         <Button name="Hans" age="17"/>
         <Button name="Hans" age="17"/>
