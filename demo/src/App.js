@@ -1,8 +1,8 @@
-import PeopleContainer from './components/PeopleContainer';
+import FootballTableReact from './components/footballCompoonents/FootballTableReact';
 
 function App() {
   return (
-    <PeopleContainer/>
+    <FootballTableReact/>
   );
 }
 
