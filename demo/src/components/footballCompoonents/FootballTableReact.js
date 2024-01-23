@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Header from './Header'
+import TableHeader from './TableHeader';
 
 export default function FootballTableReact() {
     const [table, setTable] = useState([]);
@@ -12,6 +13,9 @@ export default function FootballTableReact() {
     },[])
 
   return (
-    <Header/>
+    <div>
+      <Header/>
+      <TableHeader/>
+    </div>
   )
 }
