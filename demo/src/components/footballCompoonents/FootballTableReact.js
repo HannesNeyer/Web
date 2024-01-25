@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from './Header'
 import TableHeader from './TableHeader';
+import TableContent from './TableContent';
 
 export default function FootballTableReact() {
     const [table, setTable] = useState([]);
@@ -16,6 +17,10 @@ export default function FootballTableReact() {
     <div>
       <Header/>
       <TableHeader/>
+      {table.map((FootballTable) => {
+        return <TableContent name={FootballTable.teamName}/>
+      })}
+
     </div>
   )
 }

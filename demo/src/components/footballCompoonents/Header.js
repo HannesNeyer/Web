@@ -19,7 +19,7 @@ export default function Header() {
           <p className='ml-[-35px]'>Tabelle</p>
         </header>
 
-        <img src="https://www.bundesliga.com/assets/logo/bundesliga_pos.svg" alt="Bundesliga Logo" className='w-[20vw] h-[40px]'></img>
+        <img src="https://www.bundesliga.com/assets/logo/bundesliga_pos.svg" alt="Bundesliga Logo" className='fixed w-[20vw] h-[40px]'></img>
     </div>
   )
 }
