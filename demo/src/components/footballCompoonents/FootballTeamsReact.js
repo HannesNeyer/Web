@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Header from './Header'
-import TableHeader from './TableHeader';
 
 export default function FootballTeamsReact() {
     const [teams, setTeams] = useState([]);
