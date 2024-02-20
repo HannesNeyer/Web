@@ -10,9 +10,9 @@ export default function TableContent({placement, teamName, teamIconUrl, matches,
       <div className='ml-[125px] w-[20px]'>{won}</div>
       <div className='ml-[2px] w-[20px]'>{draw}</div>
       <div className='ml-[2px] w-[20px]'>{lost}</div>
-      <div className='ml-[117px]'>{goals}</div>
-      <div className='ml-[115px] w-[20px]'>{goalDiff}</div>
-      <div className='ml-[125px]'>{points}</div>
+      <div className='ml-[113px]'>{goals}</div>
+      <div className='ml-[116px] w-[20px]'>{goalDiff}</div>
+      <div className='ml-[127px]'>{points}</div>
     </div>
   )
 }

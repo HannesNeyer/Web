@@ -1,7 +1,9 @@
 import React from 'react'
 import "../../App.css"
+import { useNavigate } from 'react-router-dom'
  
 export default function Header() {
+const navigate = useNavigate();
   return (
     <div className='w-full h-[80px] font-sans-serif text-[25px] text-white overflow-hidden'>
         <header className='flex fixed bg-gradient-to-r from-[#F90000] to-[#BC0606] 
@@ -9,8 +11,15 @@ export default function Header() {
         clipPathPolygonLeftDiagonalUp'>
           <p>Home</p>
           <p>Spielplan</p>
-          <a href="FootballAPI_Table.html">Tabelle</a>
-          <a href="FootballAPI_Club.html">Clubs</a>
+
+          <p onClick={() => {
+            navigate("/");
+          }}>Tabelle</p>
+
+          <p onClick={() => {
+            navigate("/Clubs");
+          }}>Clubs</p>
+
           <p>Liveticker</p>
         </header>
 
