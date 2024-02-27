@@ -7,7 +7,7 @@ const navigate = useNavigate();
   return (
     <div className='w-full h-[80px] font-sans-serif text-[25px] text-white overflow-hidden'>
         <header className='flex fixed bg-gradient-to-r from-[#F90000] to-[#BC0606] 
-        w-[90vw] h-[40px] ml-[13%] items-center justify-evenly 
+        w-[90vw] h-[40px] ml-[13%] items-center justify-evenly
         clipPathPolygonLeftDiagonalUp'>
           <p>Home</p>
           <p>Spielplan</p>
@@ -28,7 +28,9 @@ const navigate = useNavigate();
           <p className='ml-[-35px]'>Tabelle</p>
         </header>
 
-        <img src="https://www.bundesliga.com/assets/logo/bundesliga_pos.svg" alt="Bundesliga Logo" className='fixed w-[20vw] h-[40px]'></img>
+        <div className='fixed w-[30vw] h-[40px] bg-white bg-white z-[-1]'>
+          <img src="https://www.bundesliga.com/assets/logo/bundesliga_pos.svg" alt="Bundesliga Logo" className='fixed w-[20vw] h-[40px]'></img>
+        </div>
     </div>
   )
 }
