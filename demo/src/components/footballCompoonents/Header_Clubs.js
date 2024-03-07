@@ -25,7 +25,7 @@ const navigate = useNavigate();
 
         <header className='flex fixed bg-gradient-to-r from-[#F90000] to-[#BC0606]
         h-[40px] w-[20vw] left-[0px] mt-[40px] items-center justify-evenly clipPathPolygonRightDiagonalDown'>
-          <p className='ml-[-35px]'>Tabelle</p>
+          <p className='ml-[-35px]'>Clubs</p>
         </header>
 
         <div className='fixed w-[30vw] h-[40px] bg-white bg-white z-[-1]'>
