@@ -12,7 +12,7 @@ export default function FootballTableComponentsContainer() {
   },[])
 
   return (
-      <div className='relative w-[1013px] h-[500px] ml-[293px] justify-center font-sans-serif 
+      <div className='relative w-[1013px] h-[500px] ml-[294px] justify-center font-sans-serif 
       text-[15px] text-white ml-[30px] overflow-y-scroll'>
         {table.map((match, index=0) => {
           return  <TableContent placement={index+1} teamName={match.teamName} teamIconUrl={match.teamIconUrl} matches={match.matches} won={match.won} draw={match.draw} 
