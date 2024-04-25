@@ -4,6 +4,9 @@ const dotenv = require("dotenv");
 const mysql = require('mysql2/promise');
 const Ajv = require("ajv")
 const ajv = new Ajv()
+const jwt = require('jsonwebtoken');
+const TOKEN_SECRET = process.env.TOKEN_SECRET;
+
 
 const schema = {
     "type": "object",
@@ -21,7 +24,24 @@ const schema = {
     ]
 }
 
+const schema1 = {
+    "type": "object",
+    "properties": {
+        "username": {
+            "type": "string"
+        },
+        "password": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "username",
+        "password"
+    ]
+}
+
 const validate = ajv.compile(schema)
+const validate1 = ajv.compile(schema1)
 
 dotenv.config();
 const app = express();
@@ -76,8 +96,54 @@ async function checkConnection() {
 // Call the function to check the connection
 checkConnection();
 
+app.get('/user/login', async function (req, res) { 
+    data = req.body;
+    let isValid = validate1(data); //TODO neues Schema erstellen
+    console.log(data)
+    if(isValid){
+        try {
+            let sql = "select username, password from user where username = ? and password = ?";
+            const values = [data.username, data.password];
+            const results = await query(sql, values);
+            if (results.length === 0) {
+              return res.status(409).json({ status: 409, message: "username oder password falsch" });
+            }
+           
+            const token = generateAccessToken({ username: req.body.username });
+           
+            return res.status(201).json({
+              token: token,
+              status: 201,
+              message: "erfolgreich eingeloggt und token erstellt"
+            })
+          } catch (err) {
+            console.error("Database error:", err);
+            return res.status(500).json({ status: 500, message: "Datenbankfehler: " + err.message });
+        }
+    } else {
+        res.status(400).send("not valid")
+    }})  
+
+  // Token für User erstellen
+function generateAccessToken(username) {
+    console.log("generating");
+    return jwt.sign(username, process.env.TOKEN_SECRET, { expiresIn: '1800s' });
+}
+  
+//Token Überprüfung
+function authenticateToken(req, res, next) {
+    const authHeader = req.headers['authorization']
+    const token = authHeader && authHeader.split(' ')[1]
+    if (!token) return res.status(401).json({ message: "kein token gefunden", status: 401 })
+    jwt.verify(token, process.env.TOKEN_SECRET, (err, user) => {
+      if (err) return res.status(403).json({ message: "falscher token", status: 403 })
+      req.user = user
+      next()
+    })
+}  
+
 app.get('/todos', async function (req, res) {
-  try {
+    try {
       const sql = "SELECT * FROM todos";
       var todos = await query(sql);
       console.log(todos);
